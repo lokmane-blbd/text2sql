@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Text2SQL Interface</title>
+  <style>
+    body { font-family: sans-serif; max-width: 600px; margin: 40px auto; }
+    label { display: block; margin-top: 20px; }
+    pre { background: #f4f4f4; padding: 10px; border-radius: 5px; white-space: pre-wrap; }
+    button { padding: 8px 16px; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h2>Ask a Question (Text2SQL)</h2>
+  <input type="text" id="question" placeholder="Enter your question" style="width: 100%; padding: 8px;" />
+  <button onclick="askQuestion()">Ask</button>
+
+  <div id="result" style="margin-top: 30px;">
+    <label>Answer:</label>
+    <pre id="answer">...</pre>
+
+    <label>Chosen Database:</label>
+    <pre id="final_db">...</pre>
+
+    <label>Candidate Databases:</label>
+    <pre id="candidate_dbs">...</pre>
+
+    <label>SQL Used:</label>
+    <pre id="sql_code">...</pre>
+  </div>
+
+  <script>
+    async function askQuestion() {
+      const question = document.getElementById('question').value;
+      const url = "https://2174-134-155-205-219.ngrok-free.app/query"; // 
+      try {
+        const response = await fetch(url, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ question })
+        });
+
+        if (!response.ok) {
+          const text = await response.text();
+          throw new Error("Server error: " + text);
+        }
+
+        const data = await response.json();
+        document.getElementById('answer').textContent = data.result || "(no answer)";
+        document.getElementById('final_db').textContent = data.db || "(none)";
+        document.getElementById('candidate_dbs').textContent = (data.candidates || []).join(', ');
+        document.getElementById('sql_code').textContent = data.sql || "(none)";
+      } catch (err) {
+        document.getElementById('answer').textContent = "❌ " + err.message;
+      }
+    }
+  </script>
+</body>
+</html>

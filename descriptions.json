@@ -1,0 +1,1494 @@
+{
+    "academic": {
+      "description": "A university-related database that tracks academic departments, courses, professors, and students.",
+      "tables": {
+        "professor": "Stores information about professors, including their department and personal details.",
+        "department": "Contains departments within the university, each with a unique ID and name.",
+        "student": "Holds records of students enrolled in the university.",
+        "course": "Lists courses offered by departments, including course names and descriptions.",
+        "section": "Defines individual course sections, usually tied to a specific semester or time slot.",
+        "teaches": "Maps professors to the courses they teach.",
+        "takes": "Links students to the courses they are taking.",
+        "advisor": "Defines student–professor advising relationships.",
+        "classroom": "Lists available classrooms including room numbers and capacities.",
+        "time_slot": "Details time slots used for course scheduling."
+      }
+    },
+    "activity_1": {
+      "description": "Tracks a variety of personal activities such as reading, dancing, and exercising.",
+      "tables": {
+        "activity": "Defines activity categories like reading, dancing, or exercising.",
+        "person": "Contains information about individuals performing activities.",
+        "activity_participation": "Maps people to the activities they participate in, including timestamps and duration."
+      }
+    },
+    "aircraft": {
+      "description": "A database tracking aircraft models, airlines, and flight-related data.",
+      "tables": {
+        "aircraft": "Stores aircraft models, types, and manufacturing info.",
+        "airline": "Contains airlines and their codes.",
+        "flight": "Records flight data including aircraft used and airline."
+      }
+    },
+    "allergy_1": {
+      "description": "A medical database focused on patient allergies and treatments.",
+      "tables": {
+        "patients": "Stores patient records including names and contact details.",
+        "allergies": "Lists known allergies.",
+        "patient_allergies": "Maps patients to their specific allergies.",
+        "medications": "Contains info on allergy medications.",
+        "prescriptions": "Links patients to prescribed medications for their allergies."
+      }
+    },
+    "apartment_rentals": {
+      "description": "A real estate database focused on apartment listings, features, and leases.",
+      "tables": {
+        "apartment": "Details each apartment unit including size and location.",
+        "landlord": "Stores information about landlords managing apartments.",
+        "features": "Lists features like parking or gym access.",
+        "apartment_features": "Associates apartments with their features.",
+        "lease": "Captures rental agreements between tenants and landlords."
+      }
+    },
+    "architecture": {
+      "description": "Contains information about architects, architectural styles, and buildings.",
+      "tables": {
+        "architect": "Stores data about architects including name and nationality.",
+        "building": "Details buildings and the architects who designed them.",
+        "style": "Defines architectural styles.",
+        "building_style": "Maps buildings to the styles they represent."
+      }
+    },
+    "assets_maintenance": {
+      "description": "Tracks assets owned by a company and their maintenance history.",
+      "tables": {
+        "asset": "Stores information about assets such as computers, vehicles, etc.",
+        "maintenance": "Details maintenance actions performed on assets.",
+        "technician": "Lists technicians responsible for maintaining assets.",
+        "asset_technician": "Links technicians to maintenance records."
+      }
+    },
+    "baseball_1": {
+      "description": "A sports database for tracking professional baseball teams, players, and statistics.",
+      "tables": {
+        "team": "Stores team details such as location and name.",
+        "player": "Holds information about baseball players.",
+        "game": "Records games played including teams and scores.",
+        "statistic": "Details player statistics for specific games."
+      }
+    },
+    "battle_death": {
+      "description": "A historical database documenting battles, involved parties, and casualties.",
+      "tables": {
+        "battle": "Stores historical battle events including name, year, and location.",
+        "country": "Lists countries that participated in battles.",
+        "casualties": "Details the number of deaths per country in each battle."
+      }
+    },
+    "behavior_monitoring": {
+      "description": "A behavioral tracking database for monitoring student conduct in schools.",
+      "tables": {
+        "student": "Holds student records including names and class info.",
+        "incident": "Tracks behavioral incidents involving students.",
+        "teacher": "Stores information about teachers who may report incidents.",
+        "incident_report": "Associates incidents with the reporting teacher and student."
+      }
+    },
+    "bike_1": {
+      "description": "A database for a bike rental service that tracks bikes, users, and usage.",
+      "tables": {
+        "bike": "Contains data on each bike available for rent.",
+        "user": "Stores user information including contact details.",
+        "rental": "Records bike rentals including duration and timestamps."
+      }
+    },
+    "body_builder": {
+      "description": "Tracks information about bodybuilders and their competition results.",
+      "tables": {
+        "bodybuilder": "Stores details like name, nationality, and weight class.",
+        "competition": "Lists bodybuilding competitions and their locations.",
+        "results": "Records placements of bodybuilders in competitions."
+      }
+    },
+    "book_2": {
+      "description": "A library-like database that tracks books, authors, and book categories.",
+      "tables": {
+        "book": "Contains book details like title, publish year, and author.",
+        "author": "Stores author names and additional info.",
+        "category": "Defines genres or categories like fiction, history, etc.",
+        "book_category": "Maps books to their respective categories."
+      }
+    },
+    "browser_web": {
+      "description": "Tracks web browsers, websites, users, and browsing sessions.",
+      "tables": {
+        "user": "Stores details about users including age and location.",
+        "browser": "Lists available web browsers.",
+        "website": "Stores websites visited by users.",
+        "visit": "Records visit sessions, including time and browser used."
+      }
+    },
+    "candidate_poll": {
+      "description": "A database for tracking political candidates and polling results.",
+      "tables": {
+        "candidate": "Stores candidate names, political parties, and details.",
+        "poll": "Contains polling event information including date and location.",
+        "poll_result": "Maps candidates to their polling results in each poll."
+      }
+    },
+    "car_1": {
+      "description": "A database related to vehicles, their types, and ownership records.",
+      "tables": {
+        "car": "Stores car information including model, year, and owner.",
+        "car_type": "Defines categories for cars such as sedan or SUV.",
+        "person": "Contains personal data for individuals who own cars."
+      }
+    },
+    "chinook_1": {
+      "description": "A music sales database with customers, invoices, and tracks.",
+      "tables": {
+        "artist": "Stores musical artists.",
+        "album": "Associates albums with artists.",
+        "track": "Lists music tracks, including genre and length.",
+        "genre": "Defines music genres.",
+        "media_type": "Specifies the type of media (e.g., MPEG, AAC).",
+        "invoice": "Records customer invoices for purchases.",
+        "invoice_line": "Contains details for each item on an invoice.",
+        "customer": "Stores customer contact and billing information.",
+        "employee": "Tracks employees, including support reps.",
+        "playlist": "Stores user-created playlists.",
+        "playlist_track": "Maps tracks to playlists."
+      }
+    },
+    "cinema": {
+      "description": "Tracks movies, films, directors, and actors in a cinema database.",
+      "tables": {
+        "movie": "Stores movie titles and release dates.",
+        "director": "Lists directors and their associated movies.",
+        "actor": "Contains actor information.",
+        "movie_actor": "Links actors to the movies they appear in."
+      }
+    },
+    "city_record": {
+      "description": "A municipal database tracking city demographics, facilities, and events.",
+      "tables": {
+        "city": "Stores city-level information such as population and region.",
+        "facility": "Lists facilities available in each city (e.g., schools, hospitals).",
+        "event": "Tracks public events held in various cities."
+      }
+    },
+    "climbing": {
+      "description": "Stores information about climbing competitions, participants, and scores.",
+      "tables": {
+        "climber": "Contains details about each climber, including nationality.",
+        "competition": "Lists climbing competitions and their dates.",
+        "score": "Tracks the performance scores of climbers in competitions."
+      }
+    },
+    "club_1": {
+      "description": "A social club database with member data, activities, and roles.",
+      "tables": {
+        "member": "Stores member names and contact details.",
+        "activity": "Lists club activities like sports or events.",
+        "member_activity": "Links members to the activities they participate in.",
+        "position": "Defines roles held by members within the club (e.g., president)."
+      }
+    },
+    "coffee_shop": {
+      "description": "Tracks coffee shop orders, customers, and menu items.",
+      "tables": {
+        "menu_item": "Lists drinks and food items available.",
+        "customer": "Stores customer names and loyalty info.",
+        "order": "Contains orders placed by customers.",
+        "order_item": "Maps each order to the menu items it includes."
+      }
+    },
+    "college_1": {
+      "description": "A database for college course offerings, enrollment, and instructors.",
+      "tables": {
+        "student": "Stores student names, IDs, and majors.",
+        "course": "Contains course names and details.",
+        "enrollment": "Links students to the courses they are enrolled in.",
+        "instructor": "Lists instructors and the courses they teach."
+      }
+    },
+    "college_2": {
+      "description": "Another college database focused on prerequisites and course structure.",
+      "tables": {
+        "course": "Stores course codes, titles, and credits.",
+        "prerequisite": "Defines prerequisite relationships between courses.",
+        "classroom": "Stores classroom locations and capacities.",
+        "time_slot": "Defines the time slots for course offerings.",
+        "teaches": "Maps instructors to specific courses and sections.",
+        "student": "Tracks enrolled students.",
+        "takes": "Links students to the courses they are taking.",
+        "instructor": "Contains instructor details."
+      }
+    },
+    "college_3": {
+      "description": "A university database modeling students, courses, and registration records.",
+      "tables": {
+        "student": "Contains student info including ID, name, and major.",
+        "course": "Details available courses and instructors.",
+        "registration": "Tracks which students are registered for which courses.",
+        "instructor": "Lists instructors by department."
+      }
+    },
+    "company_1": {
+      "description": "Tracks departments, employees, and projects within a company.",
+      "tables": {
+        "department": "Contains company departments including name and manager.",
+        "employee": "Stores information about company employees.",
+        "project": "Lists ongoing projects and associated departments.",
+        "works_on": "Maps employees to the projects they work on."
+      }
+    },
+    "company_employee": {
+      "description": "A simplified HR database tracking employee positions and pay.",
+      "tables": {
+        "employee": "Lists employees and their personal info.",
+        "position": "Defines job roles and pay rates.",
+        "employee_position": "Maps employees to their job roles."
+      }
+    },
+    "company_office": {
+      "description": "Tracks office locations, departments, and employee assignments.",
+      "tables": {
+        "office": "Stores physical office location details.",
+        "department": "Lists departments and their assigned office.",
+        "employee": "Links employees to the departments and offices they work in."
+      }
+    },
+    "concert_singer": {
+      "description": "This database records musical concerts and the singers who performed in them. It captures information about individual singers, concert events, and their associations.",
+      "tables": {
+        "singer": "Stores personal details about each singer, including their name, country, age, gender, and the song they are known for.",
+        "concert": "Contains data about each concert event, such as the concert name, its theme, the stadium it took place in, and the year it occurred.",
+        "singer_in_concert": "A relationship table that links singers to the concerts they performed in."
+      }
+    },
+    "county_public_safety": {
+      "description": "A county-level database tracking fire stations, police departments, and incidents.",
+      "tables": {
+        "county": "Contains counties and general info like name and population.",
+        "fire_station": "Lists fire stations and their locations.",
+        "police_department": "Stores information about police departments.",
+        "incident": "Details public safety incidents and locations.",
+        "response": "Links fire and police response teams to incidents."
+      }
+    },
+    "course_teach": {
+      "description": "Models university teaching, course offerings, and student registration.",
+      "tables": {
+        "course": "Stores course identifiers and descriptions.",
+        "professor": "Lists professors by department and contact info.",
+        "student": "Contains enrolled students’ information.",
+        "teaches": "Maps professors to the courses they teach.",
+        "takes": "Links students to the courses they are taking."
+      }
+    },
+    "cre_Doc_Control_Systems": {
+      "description": "Tracks documents within an organization's control system, including who created or modified them.",
+      "tables": {
+        "document": "Stores metadata about each document including title, type, and creation date.",
+        "employee": "Contains information about employees who create or manage documents.",
+        "document_status": "Tracks the status history of documents, including who changed it and when."
+      }
+    },
+    "cre_Doc_Template_Mgt": {
+      "description": "Manages document templates used within an organization for consistency and reuse.",
+      "tables": {
+        "template": "Stores template names, types, and contents.",
+        "employee": "Tracks employees who create or manage templates.",
+        "template_use": "Logs instances where templates were used in documents."
+      }
+    },
+    "cre_Doc_Tracking_DB": {
+      "description": "Tracks document movement and review workflows through departments and employees.",
+      "tables": {
+        "document": "Basic info about documents such as ID, title, and date created.",
+        "department": "Lists departments involved in document workflows.",
+        "employee": "Contains employee details and their associated departments.",
+        "tracking_record": "Logs the movement and status changes of documents."
+      }
+    },
+    "cre_Docs_and_Epenses": {
+      "description": "A document and expense management system for tracking work items and their associated costs.",
+      "tables": {
+        "document": "Stores project-related documents with metadata and costs.",
+        "employee": "Tracks who created or is responsible for each document.",
+        "expense": "Contains expense records tied to specific documents or employees."
+      }
+    },
+    "cre_Drama_Workshop_Groups": {
+      "description": "Manages workshop groups, their activities, and participant roles in a drama education setting.",
+      "tables": {
+        "group": "Stores drama workshop group names and details.",
+        "activity": "Lists activities such as rehearsals, acting sessions, or performances.",
+        "participant": "Details individuals participating in workshops.",
+        "group_activity": "Links groups to the activities they engage in.",
+        "participant_role": "Defines each participant’s role in a group or activity."
+      }
+    },
+    "cre_Theme_park": {
+      "description": "Tracks rides, maintenance, and staff within a theme park.",
+      "tables": {
+        "ride": "Stores ride names, types, and safety ratings.",
+        "maintenance": "Records maintenance checks and reports on rides.",
+        "employee": "Tracks staff responsible for operating or maintaining rides.",
+        "ride_assignment": "Maps employees to rides they operate or maintain."
+      }
+    },
+    "csu_1": {
+      "description": "A college data system for tracking students, classes, majors, and advisors.",
+      "tables": {
+        "student": "Contains student names, IDs, and major details.",
+        "major": "Lists majors offered at the institution.",
+        "class": "Details course sections offered each term.",
+        "instructor": "Stores information about course instructors.",
+        "enrollment": "Links students to the classes they are enrolled in.",
+        "advisor": "Maps students to their academic advisors."
+      }
+    },
+    "culture_company": {
+      "description": "A cultural organization database managing performances, venues, and artists.",
+      "tables": {
+        "event": "Stores cultural events and their descriptions.",
+        "venue": "Tracks venue locations and seating capacity.",
+        "artist": "Contains performer information.",
+        "performance": "Links events to artists and venues, along with performance times."
+      }
+    },
+    "customer_complaints": {
+      "description": "Tracks customer complaints, resolution steps, and support staff involved.",
+      "tables": {
+        "customer": "Contains information about customers submitting complaints.",
+        "complaint": "Records complaint details including date and issue type.",
+        "support_staff": "Lists employees responsible for handling complaints.",
+        "resolution": "Links complaints to resolution steps and responsible staff."
+      }
+    },
+    "customer_deliveries": {
+      "description": "A logistics-focused database tracking orders, shipments, and delivery staff.",
+      "tables": {
+        "customer": "Stores customer addresses and preferences.",
+        "order": "Contains customer orders including items and totals.",
+        "shipment": "Tracks shipments tied to orders.",
+        "delivery_staff": "Lists drivers or couriers responsible for deliveries.",
+        "delivery_record": "Logs deliveries and whether they were completed."
+      }
+    },
+    "customers_and_addresses": {
+      "description": "Maintains customer records and associated delivery or billing addresses.",
+      "tables": {
+        "customer": "Contains customer names and account info.",
+        "address": "Stores street address details.",
+        "customer_address": "Links customers to their addresses (can be multiple per customer)."
+      }
+    },
+    "customers_and_invoices": {
+      "description": "Tracks invoices issued to customers including payment status and totals.",
+      "tables": {
+        "customer": "Stores customer information.",
+        "invoice": "Details issued invoices including date, total amount, and payment status.",
+        "invoice_item": "Breaks invoices down into specific billed items or services."
+      }
+    },
+    "customers_and_products_contacts": {
+      "description": "Combines customer data with product preferences and communication history.",
+      "tables": {
+        "customer": "Contains personal and account information.",
+        "product": "Lists available products with descriptions.",
+        "contact": "Logs calls or messages sent to customers.",
+        "customer_product": "Links customers to their preferred products."
+      }
+    },
+    "customers_campaigns_ecommerce": {
+      "description": "Tracks marketing campaigns, customer responses, and related purchases in an ecommerce platform.",
+      "tables": {
+        "customer": "Stores customer demographic and account data.",
+        "campaign": "Details promotional campaigns like email or social media ads.",
+        "response": "Logs customer responses to campaigns.",
+        "purchase": "Tracks products purchased and campaign effectiveness."
+      }
+    },
+    "customers_card_transactions": {
+      "description": "Manages credit/debit card usage by customers including transactions and balances.",
+      "tables": {
+        "customer": "Contains customer account and card info.",
+        "card": "Stores card numbers, types, and issuing banks.",
+        "transaction": "Logs purchases and payments made using cards.",
+        "merchant": "Details merchants involved in each transaction."
+      }
+    },
+    "debate": {
+      "description": "Tracks debate tournaments, participants, teams, and scores.",
+      "tables": {
+        "tournament": "Details each debate event, including name and date.",
+        "team": "Stores team names and associated information.",
+        "participant": "Contains debater names and contact info.",
+        "team_participant": "Links participants to their respective teams.",
+        "match": "Represents individual debate matches, including results."
+      }
+    },
+    "decoration_competition": {
+      "description": "Manages decoration competitions and participant entries.",
+      "tables": {
+        "competition": "Lists competitions, their themes, and schedules.",
+        "participant": "Stores details of participants entering competitions.",
+        "entry": "Links participants to their competition entries and scores."
+      }
+    },
+    "department_management": {
+      "description": "Manages departments, employees, and department leadership.",
+      "tables": {
+        "department": "Contains department names, IDs, and descriptions.",
+        "employee": "Stores employee names, positions, and department affiliations.",
+        "manager": "Defines managerial roles for each department."
+      }
+    },
+    "department_store": {
+      "description": "Tracks inventory, sales, employees, and customers in a department store.",
+      "tables": {
+        "product": "Lists items sold including descriptions and pricing.",
+        "employee": "Stores employee roles and contact info.",
+        "customer": "Tracks customer data including purchases.",
+        "sale": "Represents completed transactions including total cost and items.",
+        "department": "Organizes products and employees into departments."
+      }
+    },
+    "device": {
+      "description": "Tracks electronic devices, their specs, and customer orders.",
+      "tables": {
+        "device": "Details devices including brand, type, and features.",
+        "customer": "Stores customer contact info and order history.",
+        "order": "Records device orders made by customers."
+      }
+    },
+    "document_management": {
+      "description": "Manages business documents, their versions, and authoring history.",
+      "tables": {
+        "document": "Stores document names, types, and creation dates.",
+        "version": "Represents document versions with associated changes.",
+        "author": "Details document authors and contributors."
+      }
+    },
+    "dog_kennels": {
+      "description": "Manages dog boarding records, kennel assignments, and owners.",
+      "tables": {
+        "dog": "Stores dog names, breeds, and vaccination info.",
+        "owner": "Contains owner details and contact information.",
+        "kennel": "Tracks kennel units and their availability.",
+        "boarding_record": "Links dogs to their boarding history and assigned kennel."
+      }
+    },
+    "dorm_1": {
+      "description": "Tracks student dormitories, rooms, and occupancy records.",
+      "tables": {
+        "dorm": "Lists dormitory buildings and their names.",
+        "room": "Tracks individual rooms, capacities, and availability.",
+        "student": "Contains information about students living in the dorm.",
+        "occupancy": "Links students to assigned dorm rooms and move-in dates."
+      }
+    },
+    "driving_school": {
+      "description": "Manages driving school courses, instructors, and students.",
+      "tables": {
+        "student": "Tracks students enrolled in driving lessons.",
+        "instructor": "Stores instructor names and qualifications.",
+        "lesson": "Represents driving lessons, including time and location.",
+        "enrollment": "Links students to their lesson schedules."
+      }
+    },
+    "e_government": {
+      "description": "Models e-government services, citizens, and departments.",
+      "tables": {
+        "citizen": "Contains registered citizen profiles and IDs.",
+        "service": "Lists digital services offered (e.g., tax filing).",
+        "department": "Links services to the government departments offering them.",
+        "request": "Tracks citizen usage of government services."
+      }
+    },
+    "e_learning": {
+      "description": "A learning management system for tracking courses, students, and progress.",
+      "tables": {
+        "course": "Stores course names, topics, and materials.",
+        "student": "Contains student records including enrollment dates.",
+        "instructor": "Lists instructors for each course.",
+        "progress": "Tracks student progress through course modules."
+      }
+    },
+    "election": {
+      "description": "Tracks elections, candidates, polling stations, and votes.",
+      "tables": {
+        "election": "Represents election events and their dates.",
+        "candidate": "Stores candidate names and party affiliations.",
+        "polling_station": "Details locations where voting occurs.",
+        "vote": "Links votes to candidates and polling stations."
+      }
+    },
+    "election_representative": {
+      "description": "Models representative elections, districts, and voter turnout.",
+      "tables": {
+        "representative": "Stores elected officials and their districts.",
+        "district": "Contains voting district names and demographics.",
+        "vote_result": "Tracks election outcomes by district."
+      }
+    },
+    "employee_hire_evaluation": {
+      "description": "Tracks job candidates, interview evaluations, and hiring decisions.",
+      "tables": {
+        "candidate": "Stores job candidate names and resumes.",
+        "interview": "Details interview rounds and schedules.",
+        "evaluator": "Lists people responsible for evaluating candidates.",
+        "evaluation": "Stores scores or comments made by evaluators.",
+        "hire_decision": "Final decision outcome per candidate."
+      }
+    },
+    "entertainment_awards": {
+      "description": "Tracks entertainment award shows, nominees, and wins.",
+      "tables": {
+        "award_show": "Contains award show names and years.",
+        "nominee": "Lists nominees per category.",
+        "winner": "Records award winners and categories.",
+        "category": "Defines award categories like Best Actor or Best Film."
+      }
+    },
+    "entrepreneur": {
+      "description": "Models startups, entrepreneurs, funding rounds, and investments.",
+      "tables": {
+        "entrepreneur": "Stores individuals founding or managing companies.",
+        "startup": "Lists startup names, domains, and founders.",
+        "investor": "Contains investors and venture capital firms.",
+        "investment": "Links investors to funded startups and amounts."
+      }
+    },
+    "epinions_1": {
+      "description": "Tracks users, products, and written reviews on a consumer platform.",
+      "tables": {
+        "user": "Contains usernames and user reputation scores.",
+        "product": "Stores product categories and brands.",
+        "review": "Links users to the reviews they've written for products.",
+        "rating": "Records numerical ratings for reviewed items."
+      }
+    },
+    "farm": {
+      "description": "Tracks farm operations, animals, crops, and worker roles.",
+      "tables": {
+        "animal": "Lists animals on the farm, including type and age.",
+        "crop": "Stores information on planted crops and harvests.",
+        "worker": "Contains farmworker details and responsibilities.",
+        "task": "Defines daily or seasonal tasks assigned to workers."
+      }
+    },
+    "film_rank": {
+      "description": "Stores movie information and ranking scores from various sources.",
+      "tables": {
+        "film": "Contains film titles, release dates, and genres.",
+        "rank_source": "Defines review sources (e.g., IMDB, Rotten Tomatoes).",
+        "ranking": "Links films to scores from different ranking sources."
+      }
+    },
+    "flight_1": {
+      "description": "Tracks flights, airports, and schedules for a single airline.",
+      "tables": {
+        "airport": "Contains airport codes, locations, and details.",
+        "flight": "Stores flight numbers, times, and destinations.",
+        "aircraft": "Describes aircraft used in each flight.",
+        "crew": "Tracks pilots and flight attendants assigned to flights."
+      }
+    },
+    "flight_2": {
+      "description": "A detailed airline management system for routes, tickets, and flight legs.",
+      "tables": {
+        "flight": "Stores flight info including codes and routes.",
+        "flight_leg": "Divides flights into legs for multi-stop routes.",
+        "ticket": "Tracks passenger ticket info and seat assignments.",
+        "airport": "Details origin and destination airports."
+      }
+    },
+    "flight_4": {
+      "description": "Tracks multi-leg international flights with airline and delay tracking.",
+      "tables": {
+        "flight": "Contains flight details including duration and airline.",
+        "airport": "Stores information on all serviced airports.",
+        "flight_segment": "Breaks long flights into smaller segments.",
+        "delay": "Logs delays per segment and their reasons."
+      }
+    },
+    "flight_company": {
+      "description": "Models a flight company’s operations including aircrafts, employees, and travel routes.",
+      "tables": {
+        "aircraft": "Describes each aircraft including model and capacity.",
+        "employee": "Tracks employees like pilots and staff.",
+        "route": "Lists travel routes and frequencies.",
+        "flight": "Details flights assigned to aircraft and routes."
+      }
+    },
+    "formula_1": {
+      "description": "A Formula 1 database tracking drivers, races, teams, and results.",
+      "tables": {
+        "driver": "Stores driver names, nationality, and racing number.",
+        "team": "Contains team names and sponsors.",
+        "race": "Details races including track and location.",
+        "result": "Links drivers to race outcomes and positions."
+      }
+    },
+    "game_1": {
+      "description": "Tracks video game information including developers, genres, and user platforms.",
+      "tables": {
+        "game": "Stores titles, release years, and ratings of video games.",
+        "developer": "Contains information about companies or individuals who created the games.",
+        "genre": "Defines game genres like RPG or shooter.",
+        "platform": "Lists platforms the games are available on, such as Xbox or PC.",
+        "game_platform": "Maps games to the platforms they are released on."
+      }
+    },
+    "game_injury": {
+      "description": "Monitors sports-related injuries and affected players during games.",
+      "tables": {
+        "game": "Stores match information such as teams and dates.",
+        "player": "Contains data about players participating in games.",
+        "injury": "Details injuries sustained by players including type and recovery time.",
+        "game_injury": "Links injuries to specific games and players."
+      }
+    },
+    "gas_company": {
+      "description": "Manages customer accounts, gas usage, and service requests for a utility provider.",
+      "tables": {
+        "customer": "Stores user accounts and contact information.",
+        "meter": "Tracks gas meters assigned to customers.",
+        "usage": "Logs monthly gas usage per meter.",
+        "service_request": "Tracks maintenance or service tickets requested by customers."
+      }
+    },
+    "geo": {
+      "description": "Models geographical hierarchies including countries, regions, and cities.",
+      "tables": {
+        "country": "Stores country names and codes.",
+        "region": "Defines regions and their corresponding countries.",
+        "city": "Tracks cities and their associated regions and populations."
+      }
+    },
+    "gymnast": {
+      "description": "Tracks gymnasts, competitions, scores, and events they participate in.",
+      "tables": {
+        "gymnast": "Stores personal and competitive info about gymnasts.",
+        "competition": "Lists gymnastics competitions including date and location.",
+        "event": "Defines specific gymnastic events like vault or floor.",
+        "score": "Records gymnast scores for events during competitions."
+      }
+    },
+    "hospital_1": {
+      "description": "Manages hospital departments, patients, staff, and appointments.",
+      "tables": {
+        "department": "Lists hospital departments such as cardiology or radiology.",
+        "doctor": "Tracks doctors and their department affiliations.",
+        "patient": "Stores patient records including name and contact.",
+        "appointment": "Logs scheduled appointments between patients and doctors."
+      }
+    },
+    "hr_1": {
+      "description": "A human resources database tracking employees, departments, and salaries.",
+      "tables": {
+        "employee": "Stores employee names, IDs, and job titles.",
+        "department": "Lists company departments and managers.",
+        "salary": "Tracks employee salary history and pay grades."
+      }
+    },
+    "icfp_1": {
+      "description": "A bibliographic database of research papers and authors for the ICFP conference.",
+      "tables": {
+        "paper": "Stores academic paper titles, abstracts, and publication years.",
+        "author": "Lists names and affiliations of authors.",
+        "writes": "Links authors to the papers they've written.",
+        "citation": "Represents paper citations referencing other papers."
+      }
+    },
+    "imdb": {
+      "description": "A movie database similar to IMDb that includes films, people, genres, and ratings.",
+      "tables": {
+        "movie": "Stores film titles, years, and descriptions.",
+        "actor": "Contains information on actors and the films they’ve acted in.",
+        "director": "Lists directors and the movies they directed.",
+        "genre": "Defines genres such as comedy, action, or drama.",
+        "movie_actor": "Maps actors to their roles in movies.",
+        "movie_genre": "Maps movies to their genres."
+      }
+    },
+    "inn_1": {
+      "description": "Tracks operations of an inn, including reservations, rooms, and guests.",
+      "tables": {
+        "guest": "Stores guest names and contact details.",
+        "room": "Lists available rooms and their characteristics.",
+        "reservation": "Tracks guest bookings and check-in/check-out dates.",
+        "staff": "Stores information about staff working at the inn."
+      }
+    },
+    "insurance_and_eClaims": {
+      "description": "Handles insurance policyholders, claims, and adjusters for electronic claim processing.",
+      "tables": {
+        "policyholder": "Stores individual and company insurance policyholders.",
+        "claim": "Logs filed claims and their status.",
+        "adjuster": "Tracks employees responsible for claim assessments.",
+        "claim_assignment": "Links adjusters to assigned claims."
+      }
+    },
+    "insurance_fnol": {
+      "description": "Tracks first notice of loss (FNOL) in insurance workflows.",
+      "tables": {
+        "claim": "Details incident and claim records.",
+        "policyholder": "Stores the insured person’s information.",
+        "incident": "Captures info on the loss event, such as date and location.",
+        "report": "Logs when the FNOL was reported and by whom."
+      }
+    },
+    "insurance_policies": {
+      "description": "Tracks insurance policy details including coverage types and policyholders.",
+      "tables": {
+        "policy": "Stores policies including duration and coverage limits.",
+        "customer": "Contains policyholder details.",
+        "coverage": "Lists coverage types such as liability or collision.",
+        "policy_coverage": "Maps policies to the coverages they include."
+      }
+    },
+    "journal_committee": {
+      "description": "Manages journal submissions, editorial committees, and reviews.",
+      "tables": {
+        "journal": "Stores journal names and publication schedules.",
+        "editor": "Lists editors and their roles.",
+        "submission": "Tracks paper submissions and statuses.",
+        "review": "Logs reviews submitted by editors for specific papers."
+      }
+    },
+    "loan_1": {
+      "description": "Tracks loan applications, approvals, payments, and customers.",
+      "tables": {
+        "customer": "Contains information about people applying for loans.",
+        "loan": "Details the loan amount, interest rate, and term.",
+        "payment": "Tracks payments made toward loans.",
+        "loan_officer": "Lists employees managing loan approvals."
+      }
+    },
+    "local_govt_and_lot": {
+      "description": "Models local government property management and land ownership.",
+      "tables": {
+        "property": "Stores land parcel records and values.",
+        "owner": "Tracks property owners and their shares.",
+        "permit": "Represents permits issued for properties.",
+        "government_employee": "Lists municipal workers managing property data."
+      }
+    },
+    "local_govt_in_alabama": {
+      "description": "Captures local government structure and data specific to Alabama.",
+      "tables": {
+        "county": "Contains county names and regional info.",
+        "official": "Lists public officials and positions held.",
+        "election": "Tracks local elections and results.",
+        "department": "Lists government departments by function."
+      }
+    },
+    "local_govt_mdm": {
+      "description": "Tracks master data for a local government including projects, vendors, and approvals.",
+      "tables": {
+        "project": "Details government projects, their budgets, and timelines.",
+        "vendor": "Lists vendors contracted for public work.",
+        "contract": "Links vendors to awarded contracts and amounts.",
+        "approval": "Tracks administrative approvals tied to projects."
+      }
+    },
+    "machine_repair": {
+      "description": "Tracks machinery repairs, maintenance logs, and technicians.",
+      "tables": {
+        "machine": "Stores machine IDs, types, and operational status.",
+        "repair": "Details repair events including dates and descriptions.",
+        "technician": "Lists technicians responsible for performing repairs.",
+        "assignment": "Links technicians to repair jobs and machines."
+      }
+    },
+    "manufactory_1": {
+      "description": "Models a manufacturing company’s parts, suppliers, and product assembly process.",
+      "tables": {
+        "part": "Lists parts used in manufacturing, including codes and descriptions.",
+        "product": "Stores final products and their specifications.",
+        "supplier": "Contains supplier information for manufacturing parts.",
+        "supply": "Links suppliers to the parts they provide.",
+        "assembly": "Tracks which parts are used to assemble each product."
+      }
+    },
+    "manufacturer": {
+      "description": "Tracks product manufacturing, including factories, materials, and costs.",
+      "tables": {
+        "product": "Contains manufactured products and their details.",
+        "factory": "Stores locations and names of manufacturing plants.",
+        "material": "Lists raw materials used in production.",
+        "product_material": "Links products to the materials they require.",
+        "production": "Logs product creation details including factory and quantity."
+      }
+    },
+    "match_season": {
+      "description": "Stores match schedules and results across sports seasons.",
+      "tables": {
+        "season": "Lists sports seasons by year.",
+        "team": "Contains team names and affiliations.",
+        "match": "Details matchups including scores, dates, and teams.",
+        "player": "Tracks players and the teams they belong to.",
+        "performance": "Logs individual player performance in matches."
+      }
+    },
+    "medicine_enzyme_interaction": {
+      "description": "Captures data on medicine and enzyme interactions for pharmaceutical analysis.",
+      "tables": {
+        "medicine": "Stores medicine names and chemical details.",
+        "enzyme": "Lists enzymes and their roles in drug processing.",
+        "interaction": "Logs known interactions between medicines and enzymes."
+      }
+    },
+    "mountain_photos": {
+      "description": "Organizes photos taken in mountainous regions along with metadata.",
+      "tables": {
+        "mountain": "Lists mountain names and characteristics.",
+        "photo": "Stores photos, filenames, and dates taken.",
+        "photographer": "Tracks people who took the photos.",
+        "photo_mountain": "Links photos to the mountains they were taken at."
+      }
+    },
+    "movie_1": {
+      "description": "Tracks movie data including actors, directors, genres, and cast roles.",
+      "tables": {
+        "movie": "Contains movie titles, release years, and descriptions.",
+        "actor": "Lists actors and their personal info.",
+        "director": "Stores directors and their filmographies.",
+        "cast": "Links actors to movies and their roles.",
+        "genre": "Defines movie genres.",
+        "movie_genre": "Maps movies to their genres."
+      }
+    },
+    "museum_visit": {
+      "description": "Tracks museum visitor records, exhibits, and visits.",
+      "tables": {
+        "museum": "Stores museum names and locations.",
+        "visitor": "Contains visitor IDs and demographics.",
+        "exhibit": "Lists exhibits featured in each museum.",
+        "visit": "Logs each visitor’s trip to the museum and what they viewed."
+      }
+    },
+    "music_1": {
+      "description": "Tracks music albums, songs, artists, and listeners.",
+      "tables": {
+        "album": "Stores albums including title, release year, and artist.",
+        "song": "Contains songs and their associated albums.",
+        "artist": "Lists performing artists.",
+        "listener": "Tracks listeners and the songs they’ve played.",
+        "play": "Logs play history between songs and listeners."
+      }
+    },
+    "music_2": {
+      "description": "Models musical works, composers, and publishers.",
+      "tables": {
+        "music": "Contains musical pieces and their types.",
+        "composer": "Lists individuals who composed the music.",
+        "publisher": "Stores publishing companies for each composition.",
+        "work": "Links composers and publishers to specific pieces of music."
+      }
+    },
+    "music_4": {
+      "description": "Tracks live performances, musical groups, and performance venues.",
+      "tables": {
+        "group": "Lists musical groups or bands.",
+        "performance": "Tracks performances including date, location, and group.",
+        "venue": "Contains details about performance venues.",
+        "ticket": "Logs tickets sold for performances."
+      }
+    },
+    "musical": {
+      "description": "Covers musical productions, cast members, and performance schedules.",
+      "tables": {
+        "musical": "Stores musical production names and summaries.",
+        "actor": "Lists actors and their involvement.",
+        "performance": "Represents show dates and locations.",
+        "role": "Tracks which actors play which roles in performances."
+      }
+    },
+    "network_1": {
+      "description": "Models computer network infrastructure including devices and connections.",
+      "tables": {
+        "device": "Stores computers and networking devices.",
+        "connection": "Tracks physical or wireless connections between devices.",
+        "location": "Describes where devices are installed."
+      }
+    },
+    "network_2": {
+      "description": "Captures organizational network access rights and security settings.",
+      "tables": {
+        "user": "Lists people using the network.",
+        "resource": "Stores systems and files that users access.",
+        "permission": "Links users to the permissions they have for each resource.",
+        "access_log": "Logs user access to various resources."
+      }
+    },
+    "news_report": {
+      "description": "Tracks news articles, journalists, and the topics they cover.",
+      "tables": {
+        "article": "Stores news headlines, bodies, and publication dates.",
+        "journalist": "Contains names and roles of reporters.",
+        "topic": "Defines categories or tags used in articles.",
+        "article_topic": "Maps articles to the topics they address."
+      }
+    },
+    "orchestra": {
+      "description": "Tracks orchestral performances, musicians, instruments, and events.",
+      "tables": {
+        "musician": "Lists musicians, their instruments, and roles.",
+        "instrument": "Defines instrument types used in performances.",
+        "performance": "Tracks orchestral concerts with dates and venues.",
+        "orchestra": "Contains info about orchestra groups and members."
+      }
+    },
+    "party_host": {
+      "description": "Tracks hosts, events, and party attendance details.",
+      "tables": {
+        "host": "Stores names and info about individuals who host parties.",
+        "party": "Details each party including date and location.",
+        "guest": "Contains information about people invited to parties.",
+        "invitation": "Links guests to parties and RSVP status."
+      }
+    },
+    "party_people": {
+      "description": "Manages events, guests, and seating for social gatherings.",
+      "tables": {
+        "event": "Stores event names and times.",
+        "person": "Contains guests invited to events.",
+        "table": "Lists tables at each event.",
+        "seating": "Maps guests to their assigned seats or tables."
+      }
+    },
+    "performance_attendance": {
+      "description": "Tracks attendance at live performances, including ticket and audience data.",
+      "tables": {
+        "performance": "Stores concert or show names, locations, and dates.",
+        "audience": "Contains audience member information.",
+        "attendance": "Links audience to performances they attended."
+      }
+    },
+    "perpetrator": {
+      "description": "Stores criminal activity reports and suspected perpetrators.",
+      "tables": {
+        "incident": "Records criminal incidents including date and location.",
+        "suspect": "Contains suspected individuals and background info.",
+        "investigation": "Links suspects to incidents under investigation."
+      }
+    },
+    "pets_1": {
+      "description": "Manages pet ownership and veterinary visits.",
+      "tables": {
+        "pet": "Stores animal info such as species and birth date.",
+        "owner": "Contains pet owner information.",
+        "visit": "Logs veterinary visits for each pet.",
+        "veterinarian": "Stores information on vets attending visits."
+      }
+    },
+    "phone_1": {
+      "description": "Stores customer phone plan data and usage.",
+      "tables": {
+        "customer": "Contains names and phone numbers of customers.",
+        "plan": "Lists available mobile phone plans.",
+        "usage": "Logs call, text, or data usage per customer."
+      }
+    },
+    "phone_market": {
+      "description": "Tracks mobile phone models, brands, and sales figures.",
+      "tables": {
+        "brand": "Lists mobile phone brands.",
+        "model": "Stores phone models and specs.",
+        "sale": "Contains sales records including quantity and region."
+      }
+    },
+    "pilot_record": {
+      "description": "Tracks pilots, certifications, and flight assignments.",
+      "tables": {
+        "pilot": "Stores pilot names and license information.",
+        "aircraft": "Contains aircraft data flown by pilots.",
+        "flight_log": "Records flights logged by each pilot."
+      }
+    },
+    "poker_player": {
+      "description": "Tracks poker players, tournaments, and results.",
+      "tables": {
+        "player": "Contains information on poker players.",
+        "tournament": "Lists poker tournaments and dates.",
+        "result": "Links players to tournament placements and winnings."
+      }
+    },
+    "product_catalog": {
+      "description": "Stores products, their descriptions, and availability.",
+      "tables": {
+        "product": "Lists product names and details.",
+        "category": "Defines categories each product belongs to.",
+        "availability": "Tracks product stock and location data."
+      }
+    },
+    "products_for_hire": {
+      "description": "Manages rentable products, rental agreements, and customers.",
+      "tables": {
+        "product": "Contains rentable product info and terms.",
+        "customer": "Stores customers who rent products.",
+        "rental": "Links customers to the products they have rented."
+      }
+    },
+    "products_gen_characteristics": {
+      "description": "Models products and their associated characteristics or features.",
+      "tables": {
+        "product": "Lists products including name and price.",
+        "characteristic": "Defines product features or traits.",
+        "product_characteristic": "Links products to their characteristics."
+      }
+    },
+    "program_share": {
+      "description": "Tracks television/radio programs and audience ratings.",
+      "tables": {
+        "program": "Contains names, types, and air times of shows.",
+        "station": "Lists broadcasting stations.",
+        "rating": "Stores viewer or listener ratings for each program."
+      }
+    },
+    "protein_institute": {
+      "description": "Captures protein-related research data including labs and researchers.",
+      "tables": {
+        "protein": "Lists proteins and their properties.",
+        "lab": "Stores research lab names and affiliations.",
+        "researcher": "Contains scientists working with proteins.",
+        "experiment": "Links proteins to experiments conducted in labs."
+      }
+    },
+    "race_track": {
+      "description": "Manages car racing events, drivers, and tracks.",
+      "tables": {
+        "track": "Contains information on racing tracks.",
+        "driver": "Stores driver profiles.",
+        "race": "Links drivers and tracks to race results and times."
+      }
+    },
+    "railway": {
+      "description": "Tracks railway lines, stations, trains, and schedules.",
+      "tables": {
+        "station": "Lists railway stations and locations.",
+        "train": "Contains train IDs and types.",
+        "line": "Stores train lines and their paths.",
+        "schedule": "Logs train arrival and departure times by station."
+      }
+    },
+    "real_estate_properties": {
+      "description": "Tracks property listings, buyers, and agents.",
+      "tables": {
+        "property": "Lists homes, land, or buildings for sale.",
+        "agent": "Contains agents representing properties.",
+        "buyer": "Stores prospective or successful buyers.",
+        "transaction": "Links properties to completed sales."
+      }
+    },
+    "restaurant_1": {
+      "description": "Manages restaurant tables, reservations, and waitstaff.",
+      "tables": {
+        "table": "Stores table IDs, capacities, and locations.",
+        "reservation": "Links customers to reserved tables.",
+        "waiter": "Tracks restaurant staff assigned to tables."
+      }
+    },
+    "restaurants": {
+      "description": "Tracks restaurant details, menus, and customer ratings.",
+      "tables": {
+        "restaurant": "Contains restaurant names, locations, and types.",
+        "menu": "Lists items available at each restaurant.",
+        "rating": "Stores reviews and star ratings by customers."
+      }
+    },
+    "riding_club": {
+      "description": "Manages horse riding club members, horses, and lessons.",
+      "tables": {
+        "member": "Lists club members and their contact details.",
+        "horse": "Tracks horses used for lessons and competitions.",
+        "lesson": "Logs riding lesson details and assigned members.",
+        "trainer": "Contains riding instructors' names and certifications."
+      }
+    },
+    "roller_coaster": {
+      "description": "Stores information about amusement park roller coasters.",
+      "tables": {
+        "coaster": "Contains coaster names, max speed, and height.",
+        "park": "Lists amusement parks and locations.",
+        "coaster_park": "Maps roller coasters to their parks."
+      }
+    },
+    "sakila_1": {
+      "description": "A movie rental database similar to the Sakila schema, tracking films, customers, rentals, and staff.",
+      "tables": {
+        "film": "Stores film titles, lengths, and ratings.",
+        "actor": "Lists actors and their film roles.",
+        "rental": "Tracks film rentals and return dates.",
+        "customer": "Stores customer names and contact info.",
+        "inventory": "Links films to specific rental copies.",
+        "store": "Details physical store locations and staff.",
+        "staff": "Contains staff working at each store."
+      }
+    },
+    "scholar": {
+      "description": "Tracks academic researchers, their publications, and affiliations.",
+      "tables": {
+        "scholar": "Contains personal and professional details about each researcher.",
+        "publication": "Stores titles and dates of published papers.",
+        "institution": "Lists academic institutions researchers belong to.",
+        "authorship": "Links scholars to the papers they've authored."
+      }
+    },
+    "school_bus": {
+      "description": "Manages school bus routes, drivers, and student transportation.",
+      "tables": {
+        "student": "Lists students and their home addresses.",
+        "bus": "Stores bus IDs and capacity details.",
+        "driver": "Contains drivers and their license info.",
+        "route": "Maps bus routes and associated stops.",
+        "assignment": "Links students to specific bus routes."
+      }
+    },
+    "school_finance": {
+      "description": "Tracks school-level budgeting and expenditure records.",
+      "tables": {
+        "school": "Stores school names and locations.",
+        "budget": "Details allocated budgets per school and year.",
+        "expenditure": "Tracks how schools spend funds across categories."
+      }
+    },
+    "school_player": {
+      "description": "Tracks school athletes, sports teams, and game statistics.",
+      "tables": {
+        "player": "Lists student athletes and their positions.",
+        "school": "Contains school names and affiliations.",
+        "team": "Maps players to school sports teams.",
+        "game": "Logs match details including opponents and scores."
+      }
+    },
+    "scientist_1": {
+      "description": "Tracks scientists, experiments, and lab affiliations.",
+      "tables": {
+        "scientist": "Stores researcher profiles and areas of study.",
+        "lab": "Lists labs where experiments are conducted.",
+        "experiment": "Describes scientific tests and hypotheses.",
+        "participation": "Links scientists to the experiments they've worked on."
+      }
+    },
+    "ship_1": {
+      "description": "Manages ship logs, routes, and crew information.",
+      "tables": {
+        "ship": "Stores ship names, types, and capacities.",
+        "crew": "Contains crew members and their positions.",
+        "voyage": "Logs ship trips with start and end dates.",
+        "assignment": "Links crew members to specific voyages."
+      }
+    },
+    "ship_mission": {
+      "description": "Tracks naval missions, involved ships, and mission outcomes.",
+      "tables": {
+        "mission": "Stores mission objectives, dates, and locations.",
+        "ship": "Lists ships assigned to missions.",
+        "outcome": "Describes mission results and evaluations.",
+        "assignment": "Links ships to missions they participated in."
+      }
+    },
+    "shop_membership": {
+      "description": "Tracks store members, memberships, and rewards programs.",
+      "tables": {
+        "member": "Contains customer profiles and membership levels.",
+        "membership": "Defines membership types and benefits.",
+        "reward": "Tracks earned rewards and redemption.",
+        "purchase": "Links members to purchases made under their accounts."
+      }
+    },
+    "singer": {
+      "description": "Stores singer profiles, performances, and musical works.",
+      "tables": {
+        "singer": "Contains name, age, and country of each singer.",
+        "song": "Lists songs, genres, and release years.",
+        "performance": "Tracks singer performances including dates and venues.",
+        "album": "Links songs to albums they are part of."
+      }
+    },
+    "small_bank_1": {
+      "description": "A small bank schema managing customer accounts, transactions, and branches.",
+      "tables": {
+        "customer": "Stores customer profiles and account IDs.",
+        "account": "Details account types, balances, and opening dates.",
+        "transaction": "Tracks deposits, withdrawals, and transfers.",
+        "branch": "Contains bank branch locations and staff counts."
+      }
+    },
+    "soccer_1": {
+      "description": "Stores data on soccer teams, players, matches, and statistics.",
+      "tables": {
+        "team": "Lists soccer team names, countries, and rankings.",
+        "player": "Contains player profiles and positions.",
+        "match": "Tracks match scores, teams, and dates.",
+        "goal": "Logs goal scorers and minute scored in each match."
+      }
+    },
+    "soccer_2": {
+      "description": "Tracks European soccer league players, clubs, and seasonal performance.",
+      "tables": {
+        "club": "Stores professional soccer clubs and their countries.",
+        "player": "Contains player bios and clubs played for.",
+        "match": "Records match outcomes including scores and referees.",
+        "season": "Defines soccer seasons and match schedules."
+      }
+    },
+    "solvency_ii": {
+      "description": "A regulatory compliance database for insurance company solvency metrics.",
+      "tables": {
+        "company": "Lists insurance companies under regulation.",
+        "solvency_ratio": "Tracks each company’s solvency ratio over time.",
+        "regulation": "Defines compliance rules and thresholds.",
+        "violation": "Logs solvency violations and regulatory actions."
+      }
+    },
+    "sports_competition": {
+      "description": "Covers multi-sport competitions including athletes and event outcomes.",
+      "tables": {
+        "athlete": "Stores athlete names, countries, and sports.",
+        "event": "Lists events and categories within each sport.",
+        "competition": "Tracks competition names, dates, and locations.",
+        "result": "Logs event outcomes including winners and times."
+      }
+    },
+    "station_weather": {
+      "description": "Tracks weather station readings across locations and times.",
+      "tables": {
+        "station": "Lists station names, IDs, and coordinates.",
+        "reading": "Records temperature, humidity, and other data over time.",
+        "location": "Links stations to their geographic regions."
+      }
+    },
+    "store_1": {
+      "description": "A basic retail store database including products, customers, and sales.",
+      "tables": {
+        "product": "Lists products, prices, and categories.",
+        "customer": "Stores customers and their loyalty numbers.",
+        "sale": "Tracks product purchases including quantity and date.",
+        "staff": "Contains store employee information."
+      }
+    },
+    "store_product": {
+      "description": "Tracks inventory, product categories, and store locations.",
+      "tables": {
+        "product": "Stores product names, SKUs, and attributes.",
+        "category": "Defines product types and classification.",
+        "inventory": "Tracks stock levels and reorder thresholds.",
+        "store": "Lists physical store locations and capacities."
+      }
+    },
+    "storm_record": {
+      "description": "Stores historical data on storms, damages, and affected areas.",
+      "tables": {
+        "storm": "Records storm names, dates, and severity.",
+        "location": "Lists areas affected by storms.",
+        "damage": "Details financial or structural damage from each storm.",
+        "response": "Tracks government or emergency responses to storm events."
+      }
+    },
+    "student_1": {
+      "description": "A general university database tracking students, instructors, and course registrations.",
+      "tables": {
+        "student": "Stores personal info including major and start year.",
+        "instructor": "Lists faculty members and their departments.",
+        "course": "Contains course titles, codes, and credits.",
+        "enrollment": "Links students to the courses they are taking."
+      }
+    },
+    "student_assessment": {
+      "description": "Models a student assessment system for courses and test scores.",
+      "tables": {
+        "student": "Lists students and academic year.",
+        "course": "Stores course names and codes.",
+        "assessment": "Details tests, quizzes, or assignments.",
+        "score": "Links students to their scores for assessments."
+      }
+    },
+    "student_transcripts_tracking": {
+      "description": "Tracks academic performance and transcripts of students over semesters.",
+      "tables": {
+        "student": "Contains name and enrollment info.",
+        "semester": "Defines time periods for courses taken.",
+        "course": "Lists academic courses and credit values.",
+        "transcript": "Links students to course results and grades."
+      }
+    },
+    "swimming": {
+      "description": "Tracks swimmers, competitions, event participation, and rankings.",
+      "tables": {
+        "swimmer": "Stores names, birthdates, and affiliations of swimmers.",
+        "event": "Lists swimming event types and distances.",
+        "competition": "Details competition names and dates.",
+        "result": "Links swimmers to their performance in events."
+      }
+    },
+    "theme_gallery": {
+      "description": "Tracks themes and artwork displayed in a gallery setting.",
+      "tables": {
+        "theme": "Lists themes or concepts used in exhibitions.",
+        "artwork": "Contains artworks, their titles, and descriptions.",
+        "exhibition": "Details exhibitions, locations, and dates.",
+        "theme_artwork": "Maps themes to the artworks associated with them."
+      }
+    },
+    "tracking_grants_for_research": {
+      "description": "Manages grant funding for research projects and participating organizations.",
+      "tables": {
+        "grant": "Stores grant names, amounts, and funding agencies.",
+        "research_project": "Lists funded research projects and their goals.",
+        "organization": "Contains institutions participating in research.",
+        "grant_assignment": "Links grants to the projects or organizations they support."
+      }
+    },
+    "tracking_orders": {
+      "description": "Tracks customer orders, items, and delivery status.",
+      "tables": {
+        "order": "Stores order IDs, dates, and totals.",
+        "customer": "Contains information on individuals placing orders.",
+        "item": "Lists product names and prices.",
+        "order_item": "Maps items to the orders they are part of.",
+        "shipment": "Tracks shipping details and delivery status."
+      }
+    },
+    "tracking_share_transactions": {
+      "description": "Records share transactions, investors, and company equity.",
+      "tables": {
+        "investor": "Stores names and information of shareholders.",
+        "company": "Lists companies and their share details.",
+        "transaction": "Tracks share purchases and sales with dates.",
+        "shareholding": "Links investors to current shares held."
+      }
+    },
+    "tracking_software_problems": {
+      "description": "Tracks reported bugs, software modules, and resolutions.",
+      "tables": {
+        "problem": "Stores descriptions of software issues and their severity.",
+        "software": "Lists software systems and versions.",
+        "module": "Contains modules where issues occur.",
+        "resolution": "Tracks how and when issues were resolved."
+      }
+    },
+    "train_station": {
+      "description": "Models train routes, stations, and schedules.",
+      "tables": {
+        "station": "Stores train station names and locations.",
+        "train": "Tracks trains and their route assignments.",
+        "schedule": "Details arrivals and departures at stations.",
+        "route": "Defines travel routes between stations."
+      }
+    },
+    "tvshow": {
+      "description": "Tracks television shows, cast members, and episodes.",
+      "tables": {
+        "tv_show": "Stores show names, genres, and run dates.",
+        "actor": "Contains cast members and character names.",
+        "episode": "Lists episode titles, air dates, and seasons.",
+        "appearance": "Links actors to their roles in specific shows or episodes."
+      }
+    },
+    "twitter_1": {
+      "description": "Tracks users, tweets, and follower relationships in a social network.",
+      "tables": {
+        "user": "Contains user accounts and profile info.",
+        "tweet": "Stores tweets, timestamps, and user references.",
+        "follower": "Links users to the accounts they follow."
+      }
+    },
+    "university_basketball": {
+      "description": "Tracks basketball teams, players, and tournament results at the university level.",
+      "tables": {
+        "team": "Lists basketball teams and their universities.",
+        "player": "Contains player stats and team affiliations.",
+        "game": "Details basketball games including scores and dates.",
+        "tournament": "Stores tournament names and brackets."
+      }
+    },
+    "voter_1": {
+      "description": "Captures voter registration and voting history for local elections.",
+      "tables": {
+        "voter": "Stores voter names, IDs, and registration details.",
+        "election": "Lists elections and their dates.",
+        "vote": "Tracks voter participation in elections."
+      }
+    },
+    "voter_2": {
+      "description": "Extends voter data with polling locations and districts.",
+      "tables": {
+        "voter": "Stores detailed voter registration info.",
+        "district": "Lists voting districts and boundaries.",
+        "polling_place": "Stores polling locations.",
+        "vote": "Links voters to where and when they voted."
+      }
+    },
+    "wedding": {
+      "description": "Tracks weddings, invited guests, and ceremony logistics.",
+      "tables": {
+        "wedding": "Stores wedding events and couples' names.",
+        "guest": "Lists attendees and their RSVP status.",
+        "ceremony": "Details location and time for wedding ceremonies.",
+        "gift": "Tracks gifts received from each guest."
+      }
+    },
+    "wine_1": {
+      "description": "Stores wine product data, including vineyards, reviews, and vintages.",
+      "tables": {
+        "wine": "Lists wine names, types, and years.",
+        "vineyard": "Contains info on vineyards and their regions.",
+        "review": "Stores reviews and ratings of wines.",
+        "grape": "Details types of grapes used in each wine."
+      }
+    },
+    "workshop_paper": {
+      "description": "Tracks workshop papers, authors, and academic sessions.",
+      "tables": {
+        "paper": "Stores research paper titles and abstracts.",
+        "author": "Contains names and institutions of paper authors.",
+        "session": "Details sessions in which papers were presented.",
+        "presentation": "Maps papers to the sessions they were delivered in."
+      }
+    },
+    "world_1": {
+      "description": "Captures geographical, political, and economic data of countries and cities.",
+      "tables": {
+        "country": "Stores country names, regions, and populations.",
+        "city": "Lists cities and their country associations.",
+        "language": "Tracks official and spoken languages per country.",
+        "economy": "Stores GDP, employment, and economic rankings."
+      }
+    },
+    "wrestler": {
+      "description": "Tracks wrestlers, matches, and championships.",
+      "tables": {
+        "wrestler": "Stores personal and performance data of wrestlers.",
+        "match": "Details wrestling matches, opponents, and results.",
+        "title": "Tracks championship belts and holders.",
+        "promotion": "Lists wrestling organizations or events."
+      }
+    },
+    "wta_1": {
+      "description": "Covers WTA tennis players, matches, and rankings.",
+      "tables": {
+        "player": "Lists female tennis players and their rankings.",
+        "match": "Details match results, dates, and locations.",
+        "tournament": "Stores tournament names and categories.",
+        "ranking": "Tracks WTA rankings over time."
+      }
+    },
+    "yelp": {
+      "description": "Models Yelp-style business reviews, users, and business categories.",
+      "tables": {
+        "user": "Contains user profiles and activity data.",
+        "business": "Lists businesses, locations, and types.",
+        "review": "Stores reviews, ratings, and dates per business.",
+        "category": "Defines business categories and tags."
+      }
+    }
+  }
+  
